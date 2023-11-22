@@ -37,7 +37,7 @@ function loadSearchHistory() {
 }
 
 function getCoords(city) {
-  const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`;
 
   fetch(url)
     .then((response) => response.json())
@@ -115,7 +115,7 @@ function processForecastData(rawData) {
 }
 
 function getIconUrl(iconCode) {
-  return `http://openweathermap.org/img/wn/${iconCode}.png`; // Standard URL format for OpenWeatherMap icons
+  return `https://openweathermap.org/img/wn/${iconCode}.png`; // Standard URL format for OpenWeatherMap icons
 }
 
 // fetch(url)
