@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+      <section class="search-section">
+        <h2>Search for a City:</h2>
+        <input type="text" id="city-search" placeholder="Los Angeles" />
+        <button id="search-btn">Search</button>
+        <div id="city-list">
+          <h2>Search History</h2>
+          <div id="search-history"></div>
+        </div>
+      </section>
+      <section class="current-weather">
+        <h2 id="cityname">Los Angeles ⭐</h2>
+        <p id="tempurature">Temp: 76.62°F</p>
+        <p id="wind">Wind: 8.43 MPH</p>
+        <p id="humidity">Humidity: 44 %</p>
+      </section>
+      <section class="forecast">
+        <h2>5-Day Forecast:</h2>
+
+        <div class="forecast-card" id="day1">
+          <p class="forecast-date">Date</p>
+          <img src="" class="weather-icon" alt="Weather Icon" />
+          <p class="forecast-temp">Temp:</p>
+          <p class="forecast-wind">Wind:</p>
+          <p class="forecast-humidity">Humidity:</p>
+        </div>
+        <div class="forecast-card" id="day2">
+          <p class="forecast-date">Date</p>
+          <img src="" class="weather-icon" alt="Weather Icon" />
+          <p class="forecast-temp">Temp:</p>
+          <p class="forecast-wind">Wind:</p>
+          <p class="forecast-humidity">Humidity:</p>
+        </div>
+        <div class="forecast-card" id="day3">
+          <p class="forecast-date">Date</p>
+          <img src="" class="weather-icon" alt="Weather Icon" />
+          <p class="forecast-temp">Temp:</p>
+          <p class="forecast-wind">Wind:</p>
+          <p class="forecast-humidity">Humidity:</p>
+        </div>
+        <div class="forecast-card" id="day4">
+          <p class="forecast-date">Date</p>
+          <img src="" class="weather-icon" alt="Weather Icon" />
+          <p class="forecast-temp">Temp:</p>
+          <p class="forecast-wind">Wind:</p>
+          <p class="forecast-humidity">Humidity:</p>
+        </div>
+        <div class="forecast-card" id="day5">
+          <p class="forecast-date">Date</p>
+          <img src="" class="weather-icon" alt="Weather Icon" />
+          <p class="forecast-temp">Temp:</p>
+          <p class="forecast-wind">Wind:</p>
+          <p class="forecast-humidity">Humidity:</p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
